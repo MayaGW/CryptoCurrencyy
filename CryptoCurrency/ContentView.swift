@@ -14,11 +14,13 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+                .foregroundColor(Color.Theme.ACCENT)
+                .background(Color(.launchScreenBackground2))
         }
         .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView().preferredColorScheme(.dark)
 }
