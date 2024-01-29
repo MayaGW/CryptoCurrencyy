@@ -11,7 +11,10 @@ import SwiftUI
 struct CryptoCurrencyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                HomeView()
+                    .navigationBarHidden(/*@START_MENU_TOKEN@*/false/*@END_MENU_TOKEN@*/)
+            }
         }
     }
 }
